@@ -22,28 +22,28 @@ export default function UserMenu({ open, onClose }: Props) {
 				className="w-full px-3 py-2 text-left text-sm text-slate-700 hover:bg-slate-50"
 				onClick={async () => {
 					onClose();
-					await signOut({ callbackUrl: "/login" });
+					await signOut({ callbackUrl: "/" });
 				}}
 				role="menuitem"
 			>
 				Logout
 			</button>
-			<button
-				type="button"
-				className="w-full px-3 py-2 text-left text-sm text-slate-700 hover:bg-slate-50"
-				onClick={onClose}
+			<a
+				href="/codes"
+				className="block w-full px-3 py-2 text-left text-sm text-slate-700 hover:bg-slate-50"
 				role="menuitem"
+				onClick={onClose}
 			>
 				See all codes
-			</button>
-			<button
-				type="button"
-				className="w-full px-3 py-2 text-left text-sm text-slate-700 hover:bg-slate-50"
-				onClick={onClose}
+			</a>
+			<a
+				href="/settings"
+				className="block w-full px-3 py-2 text-left text-sm text-slate-700 hover:bg-slate-50"
 				role="menuitem"
+				onClick={onClose}
 			>
 				Settings
-			</button>
+			</a>
 		</div>
 	);
 }

@@ -61,13 +61,13 @@ export default function NavBar() {
 						<div className="flex items-center gap-2">
 							<a
 								href="/login"
-								className="rounded-md border border-slate-300 bg-white px-3 py-1.5 text-sm font-medium text-slate-800 shadow-sm hover:bg-slate-50"
+								className="rounded-md border border-slate-300 bg-white/90 px-3 py-1.5 text-sm font-medium text-slate-800 shadow-sm hover:bg-white"
 							>
 								Login
 							</a>
 							<a
 								href="/signup"
-								className="rounded-md bg-slate-900 px-3 py-1.5 text-sm font-medium text-white shadow-sm hover:bg-slate-800"
+								className="rounded-md bg-amber-700 px-3 py-1.5 text-sm font-medium text-white shadow-sm hover:bg-amber-800 transition-colors"
 							>
 								Signup
 							</a>
