@@ -67,7 +67,7 @@ export default function NavBar() {
 							</a>
 							<a
 								href="/signup"
-								className="rounded-md bg-amber-700 px-3 py-1.5 text-sm font-medium text-white shadow-sm hover:bg-amber-800 transition-colors"
+								className="rounded-md bg-amber-900 px-3 py-1.5 text-sm font-medium text-white shadow-sm hover:bg-amber-950 transition-colors"
 							>
 								Signup
 							</a>

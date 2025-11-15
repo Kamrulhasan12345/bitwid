@@ -21,7 +21,14 @@ export default async function CodesPage() {
 		<div className="flex min-h-screen flex-col">
 			<NavBar />
 
-			<h1 className="text-lg font-medium text-slate-800">Your Codes</h1>
+			{/* Sticky title below navbar */}
+			<div className="sticky top-16 z-10 bg-[#fcf7e9]/90 px-4 py-5 backdrop-blur sm:px-6">
+				<div className="mx-auto max-w-6xl">
+					<h1 className="text-center text-2xl font-semibold tracking-[0.15em] text-slate-900">
+						Your Codes
+					</h1>
+				</div>
+			</div>
 
 			{/* Scrollable list */}
 			<main className="mx-auto w-full max-w-6xl flex-1 overflow-y-auto px-4 py-6 sm:px-6">
@@ -41,7 +48,7 @@ export default async function CodesPage() {
 							</span>
 							<button
 								type="button"
-								className="rounded-md bg-amber-700 px-3 py-1.5 text-xs font-medium text-white shadow-sm hover:bg-amber-800"
+								className="rounded-md bg-amber-900 px-3 py-1.5 text-xs font-medium text-white shadow-sm hover:bg-amber-950"
 							>
 								Go to code
 							</button>
